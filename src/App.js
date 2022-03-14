@@ -1,8 +1,7 @@
 
-import ExpenseItem from './components/ExpenseItem.js';
-import './App.css';
+import Expenses from './components/Expenses.js';
 function App(){
-  let  expennse=[
+  let  expenses=[
       { 
           id:"e1",
         title:'School fee',
@@ -34,29 +33,8 @@ function App(){
   ]
     return ( 
         <div>
-          <div className='heading'><h2>Track Your Monthly Expense Item Detial</h2></div>
-            <ExpenseItem 
-            date={expennse[0].date} 
-            title={expennse[0].title} 
-            amount={expennse[0].amount}>
-            </ExpenseItem>
-            <ExpenseItem 
-            date={expennse[1].date} 
-            title={expennse[1].title} 
-            amount={expennse[1].amount}>
-            </ExpenseItem>
-            <ExpenseItem 
-            date={expennse[2].date} 
-            title={expennse[2].title} 
-            amount={expennse[2].amount}>
-            </ExpenseItem>
-            <ExpenseItem 
-            date={expennse[3].date} 
-            title={expennse[3].title} 
-            amount={expennse[3].amount}>
-            </ExpenseItem>
-           
-           
+          <div><h1>Let's get started</h1></div>
+            <Expenses item={expenses}/>
         </div>
 
     )
